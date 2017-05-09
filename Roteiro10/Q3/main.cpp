@@ -28,11 +28,11 @@ int main(){
 
 	try{
 
-		cout << "Salario de Joao: R$ " << folha.consultaSalarioFuncionario(1) << endl;
-		cout << "Salario de Pedro: R$ " << folha.consultaSalarioFuncionario(2) << endl;
-		cout << "Salario de Flavio: R$ " << folha.consultaSalarioFuncionario(3) << endl;
-		cout << "Salario de Lucas: R$ " << folha.consultaSalarioFuncionario(4) << endl;
-		cout << "Salario de Karina: R$ " << folha.consultaSalarioFuncionario(5) << endl;
+		cout << "Salario de Joao: R$ " << folha.consultaSalarioFuncionario(2376432) << endl;
+		cout << "Salario de Pedro: R$ " << folha.consultaSalarioFuncionario(2142351) << endl;
+		cout << "Salario de Flavio: R$ " << folha.consultaSalarioFuncionario(5642866) << endl;
+		cout << "Salario de Lucas: R$ " << folha.consultaSalarioFuncionario(4215492) << endl;
+		cout << "Salario de Karina: R$ " << folha.consultaSalarioFuncionario(2348512) << endl;
 		cout << "Salario de Fantasma: R$ " << folha.consultaSalarioFuncionario(42) << endl;
 
 	}catch(FuncionarioNaoExisteException &x){

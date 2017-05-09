@@ -13,14 +13,19 @@ void SistemaGerenciaFolha::setFuncionarios(Funcionario *x[]){
 	}
 }
 
-double SistemaGerenciaFolha::consultaSalarioFuncionario(int x){
+double SistemaGerenciaFolha::consultaSalarioFuncionario(int m){
 
-	if(x>TAM){
+	int i, f=0;
+	for(i=1;i<=TAM;i++){
+		if(funcionarios[i-1]->getMatricula() == m){
+			f=i;
+		}
+	}
+	if(f==0){
 		throw FuncionarioNaoExisteException();
 	}else{
-		return funcionarios[x-1]->calcularSalario();
+		return funcionarios[f-1]->calcularSalario();
 	}
-
 }
 
 double SistemaGerenciaFolha::calcularValorTotalFolha(void){
